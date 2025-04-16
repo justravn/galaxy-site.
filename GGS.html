@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galaxy Global System</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #755791; 
+      color: white;
+      overflow: hidden;
+    }
+
+    
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg') no-repeat center center/cover;
+      z-index: -2;
+    }
+
+    
+    #overlay-pattern {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+    .title {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    .widgets {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 5rem;
+    }
+
+    .widgets a {
+      background-color: rgba(255, 255, 255, 0.15); /* شفاف شويه */
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .widgets a:hover {
+      background-color: rgba(91, 64, 110, 0.815);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="background"></div>
+  <div id="overlay-pattern"></div>
+
+  <div class="title">Galaxy Global System</div>
+
+  <div class="widgets">
+    <a href="Login.html" target="_blank">Log In</a>
+    <a href="Sign up.html" target="_blank">Sign Up</a>
+  </div>
+
+</body>
+</html>
